@@ -1,0 +1,31 @@
+{
+  "name": "@dofus-currency/swf-buffer",
+  "author": "Dylan DE SOUSA <dylan@mhirba.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/Dofus-Currency/swf-buffer.git"
+  },
+  "scripts": {
+    "test:static": "tsc",
+    "test:unit": "yarn jest --config=.jestrc.js",
+    "test": "yarn test:static && yarn test:unit",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "format": "yarn prettier --write \"src/**/*\" --loglevel silent"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.4",
+    "@typescript-eslint/eslint-plugin": "^3.6.0",
+    "@typescript-eslint/parser": "^3.6.0",
+    "eslint": "^7.4.0",
+    "jest": "^26.1.0",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "smart-buffer": "^4.1.0"
+  }
+}

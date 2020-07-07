@@ -1,0 +1,17 @@
+name: Unit Tests
+
+on: [push]
+
+jobs:
+  test:
+    name: Runing tests with yarn
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: Yarn install
+        run: yarn
+      - name: Yarn test
+        run: yarn test

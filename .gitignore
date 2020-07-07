@@ -1,0 +1,20 @@
+##
+# NODE
+##
+
+# Modules dependencies
+node_modules/
+
+# Environment
+.env
+
+##
+# GENERATED
+##
+
+# by us
+.dist/
+
+# by others
+.idea/
+coverage/
