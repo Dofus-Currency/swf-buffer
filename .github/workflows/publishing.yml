@@ -26,6 +26,7 @@ jobs:
           node-version: 14.x
           registry-url: https://npm.pkg.github.com/
           scope: '@dofus-currency'
+      - run: yarn build
       - run: git config --global user.name "Dylan DE SOUSA"
       - run: git config --global user.email "dylan@mhirba.com"
       - run: yarn publish --new-version ${GITHUB_REF##*/}
