@@ -12,10 +12,11 @@
     "test:static": "tsc",
     "test:unit": "yarn jest --config=.jestrc.js",
     "test": "yarn test:static && yarn test:unit",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "format": "yarn prettier --write \"src/**/*\" --loglevel silent",
     "clean": "yarn rimraf .dist",
     "build": "yarn clean && yarn tsc",
-    "lint": "eslint \"src/**/*.ts\" --fix",
-    "format": "yarn prettier --write \"src/**/*\" --loglevel silent"
+    "prepublish": "yarn build"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
