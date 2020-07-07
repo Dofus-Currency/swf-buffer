@@ -8,15 +8,6 @@ on:
     types: [created]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 14.x
-      - run: yarn install
-
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
@@ -27,6 +18,7 @@ jobs:
           node-version: 14.x
           registry-url: https://npm.pkg.github.com/
           scope: '@dofus-currency'
+      - run: yarn install
       - run: git config --global user.name "Dylan DE SOUSA"
       - run: git config --global user.email "dylan@mhirba.com"
       - run: yarn publish --new-version ${GITHUB_REF##*/}
