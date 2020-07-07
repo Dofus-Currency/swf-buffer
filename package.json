@@ -6,7 +6,7 @@
     "type": "git",
     "url": "ssh://git@github.com/Dofus-Currency/swf-buffer.git"
   },
-  "main": "./.dist/index.js",
+  "main": "./.dist/SwfBuffer.js",
   "types": "swf-buffer.d.ts",
   "scripts": {
     "test:static": "tsc",
