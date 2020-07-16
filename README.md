@@ -5,7 +5,7 @@
 
 ## <a name='overview'>Overview</a>
 
-Simple node module for reading swf-buffer help reading SWF Data Types.
+Simple node module for reading SWF Data Types.
 
 ## <a name='credits'>Credits</a>
 
