@@ -7,7 +7,6 @@
     "url": "ssh://git@github.com/Dofus-Currency/swf-buffer.git"
   },
   "main": "./.dist/SwfBuffer.js",
-  "types": "swf-buffer.d.ts",
   "scripts": {
     "test:static": "tsc",
     "test:unit": "yarn jest --config=.jestrc.js",
